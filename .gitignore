@@ -1,0 +1,68 @@
+# ============================================================
+# .gitignore — Ficheiros que NÃO devem ir para o Git
+# ============================================================
+# O Git é um sistema de controlo de versões. Guarda o
+# histórico do teu código. Mas há coisas que não deves
+# guardar: dependências, bases de dados, ficheiros de
+# configuração local, etc.
+#
+# Cada linha é um padrão de ficheiros a ignorar.
+
+# ============================================================
+# Node.js
+# ============================================================
+
+# node_modules: Pastas com dependências (milhares de ficheiros!)
+# Nunca deves enviar node_modules para o Git.
+# Quando fazes clone, corre `npm install` para as instalar.
+node_modules/
+
+# ============================================================
+# SQLite
+# ============================================================
+
+# Ficheiro da base de dados SQLite
+# Cada pessoa que correr o projeto vai ter a sua própria BD.
+# Na verdade, podes querer versionar um ficheiro de seed,
+# mas a BD em si não.
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# ============================================================
+# Ambiente e Configuração Local
+# ============================================================
+
+# .env: Variáveis de ambiente (API keys, passwords, etc.)
+.env
+.env.local
+.env.*.local
+
+# ============================================================
+# Logs
+# ============================================================
+
+# Ficheiros de log
+*.log
+npm-debug.log*
+
+# ============================================================
+# Sistema Operativo
+# ============================================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ============================================================
+# IDE / Editores de Código
+# ============================================================
+
+# Configurações pessoais do editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

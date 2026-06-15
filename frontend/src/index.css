@@ -1,0 +1,21 @@
+/* ============================================================
+   index.css — Estilos Globais com Tailwind CSS
+   ============================================================
+   
+   O que são estas diretivas @tailwind?
+   -------------------------------------
+   - @tailwind base:    Estilos base (reset de browser, tipografia)
+   - @tailwind components: Estilos de componentes utilitários
+   - @tailwind utilities: Todas as classes utilitárias (bg-blue-500, etc.)
+   
+   O PostCSS + Tailwind processam estas diretivas e geram
+   o CSS final. O navegador nunca vê "@tailwind" — vê o CSS
+   já compilado.
+   
+   Podes adicionar CSS personalizado aqui se quiseres, mas
+   com Tailwind é raro precisares!
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
